@@ -24,6 +24,14 @@ main{max-width:900px;margin:0 auto;padding:16px 16px 56px}
 .embers i{position:absolute;bottom:60px;width:4px;height:4px;border-radius:50%;background:#ffb347;opacity:0;animation:rise 6s linear infinite}
 @keyframes rise{0%{opacity:0;transform:translateY(0)}15%{opacity:.9}100%{opacity:0;transform:translateY(-300px) translateX(20px)}}
 @media(prefers-reduced-motion:reduce){.f,.embers i{animation:none}.embers{display:none}}
+.santa{position:absolute;top:46%;left:-220px;width:210px;z-index:0;animation:fly 14s linear infinite}
+.bob{display:block;overflow:visible;animation:bob 1.6s ease-in-out infinite alternate}
+.flash{animation:pew .18s steps(2) infinite}
+@keyframes fly{from{left:-220px}to{left:100%}}
+@keyframes bob{from{transform:translateY(-5px) rotate(-1deg)}to{transform:translateY(5px) rotate(1deg)}}
+@keyframes pew{from{opacity:1}to{opacity:.25}}
+.hero .kick,.hero h1,.hero .dots,.hero p,.chips{position:relative;z-index:1}
+@media(prefers-reduced-motion:reduce){.santa,.bob,.flash{animation:none}.santa{left:60%}}
 .sub{color:var(--mute);margin:20px 0}
 .day{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 16px}
 .day h2{margin:0 0 8px;color:var(--accent);font:700 1.15rem 'Cinzel Decorative',Georgia,serif}
@@ -38,6 +46,21 @@ tr:last-child th,tr:last-child td{border-bottom:0}
 </style></head><body><main>
 <header class="hero">
 <div class="embers" aria-hidden="true"><i style="left:11%;animation-delay:0.0s;animation-duration:5s"></i><i style="left:48%;animation-delay:0.7s;animation-duration:6s"></i><i style="left:85%;animation-delay:1.4s;animation-duration:7s"></i><i style="left:22%;animation-delay:2.1s;animation-duration:8s"></i><i style="left:59%;animation-delay:2.8s;animation-duration:5s"></i><i style="left:96%;animation-delay:3.5s;animation-duration:6s"></i><i style="left:33%;animation-delay:4.2s;animation-duration:7s"></i><i style="left:70%;animation-delay:4.9s;animation-duration:8s"></i><i style="left:7%;animation-delay:5.6s;animation-duration:5s"></i><i style="left:44%;animation-delay:0.3s;animation-duration:6s"></i><i style="left:81%;animation-delay:1.0s;animation-duration:7s"></i><i style="left:18%;animation-delay:1.7s;animation-duration:8s"></i><i style="left:55%;animation-delay:2.4s;animation-duration:5s"></i><i style="left:92%;animation-delay:3.1s;animation-duration:6s"></i><i style="left:29%;animation-delay:3.8s;animation-duration:7s"></i><i style="left:66%;animation-delay:4.5s;animation-duration:8s"></i><i style="left:3%;animation-delay:5.2s;animation-duration:5s"></i><i style="left:40%;animation-delay:5.9s;animation-duration:6s"></i><i style="left:77%;animation-delay:0.6s;animation-duration:7s"></i><i style="left:14%;animation-delay:1.3s;animation-duration:8s"></i><i style="left:51%;animation-delay:2.0s;animation-duration:5s"></i><i style="left:88%;animation-delay:2.7s;animation-duration:6s"></i><i style="left:25%;animation-delay:3.4s;animation-duration:7s"></i><i style="left:62%;animation-delay:4.1s;animation-duration:8s"></i><i style="left:99%;animation-delay:4.8s;animation-duration:5s"></i><i style="left:36%;animation-delay:5.5s;animation-duration:6s"></i></div>
+<div class="santa" aria-hidden="true"><svg viewBox="0 0 320 120" class="bob"><g fill="#12060a">
+<path d="M10 70 Q20 100 70 100 L150 100 Q165 100 165 88 L165 78 L60 78 Q45 78 38 62 Q30 66 10 70Z"/>
+<rect x="60" y="100" width="95" height="4" rx="2"/><path d="M40 108 Q120 116 190 108" stroke="#12060a" stroke-width="3" fill="none"/>
+<ellipse cx="105" cy="62" rx="26" ry="22"/><circle cx="105" cy="34" r="12"/>
+<path d="M92 30 Q105 6 124 24 Q112 22 92 30Z"/>
+<path d="M165 80 L215 66 L255 66" stroke="#12060a" stroke-width="2.5" fill="none"/>
+<ellipse cx="240" cy="68" rx="30" ry="11"/><rect x="262" y="52" width="9" height="20" rx="4" transform="rotate(25 266 62)"/><circle cx="276" cy="48" r="7"/>
+<path d="M226 76 L222 100 M246 76 L252 98 M262 70 L276 88" stroke="#12060a" stroke-width="3"/>
+<path d="M276 42 L268 24 L276 32 L280 16 L284 34 L292 22 L288 42Z"/></g>
+<g fill="#fff4e0"><circle cx="124" cy="22" r="5"/><path d="M92 40 Q105 62 120 40 Q105 48 92 40Z"/><rect x="92" y="28" width="26" height="5" rx="2"/></g>
+<path d="M118 56 L140 40" stroke="#12060a" stroke-width="7" stroke-linecap="round"/>
+<rect x="136" y="26" width="22" height="9" rx="2" fill="#12060a" transform="rotate(-38 136 35)"/>
+<rect x="130" y="34" width="5" height="14" rx="1" fill="#12060a" transform="rotate(-38 132 40)"/>
+<g class="flash"><polygon points="160,14 170,2 168,16 182,12 172,22 184,30 168,26 164,38 158,26 146,28 156,20" fill="#ffd23f"/><g stroke="#ffe9a0" stroke-width="2.5" stroke-linecap="round"><path d="M172 8 L196 -6"/><path d="M180 18 L210 8"/><path d="M168 -2 L182 -22"/></g></g>
+<circle cx="278" cy="46" r="1.6" fill="#ff3b30"/></svg></div>
 <div class="kick">Walt Disney World · Arrive December 19 · Park days December 20-23, 2026</div>
 <h1>Disney Trip Plan</h1>
 <div class="dots" aria-hidden="true"><b style="background:#e5484d"></b><b style="background:#f5b73b"></b><b style="background:#3fb27f"></b><b style="background:#e5484d"></b><b style="background:#f5b73b"></b></div>
